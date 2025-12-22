@@ -17,8 +17,8 @@ export default function DeliWaveLanding() {
         </motion.div>
 
         <motion.img
-          src="/images/bot_hero.webp"
-          alt="DeliWave delivery robot"
+          src="/images/BellaBot_hero.webp"
+          alt="Bella, Pudu, server robot, restaurant, Pringle"
           className="rounded-2xl shadow-2xl"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
