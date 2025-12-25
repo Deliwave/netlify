@@ -16,7 +16,7 @@ export default function DeliWaveLanding() {
       img: "/images/Bella_square.webp",
       hero: "/images/Bella_hero.webp",
       category: "Standard",
-      desc: "Reliable indoor delivery for restaurants and retail.",
+      desc: "Indoor delivery bot",
       details: "BellaBot is designed for smooth indoor navigation with high payload stability.",
     },
     {
@@ -24,8 +24,8 @@ export default function DeliWaveLanding() {
       img: "/images/BellaPro_square.webp",
       hero: "/images/BellaPro_hero.webp",
       category: "Pro",
-      desc: "Advanced delivery with enhanced sensors.",
-      details: "BellaPro includes advanced obstacle detection and fleet management.",
+      desc: "Advanced indoor delivery bot",
+      details: "Latest model with many customer experiencce improvements and marketing screen",
     },
     {
       name: "Pudu2",
@@ -40,16 +40,16 @@ export default function DeliWaveLanding() {
       img: "/images/KettyPro_square.webp",
       hero: "/images/KettyPro_hero.webp",
       category: "Pro",
-      desc: "Premium compact assistant bot.",
-      details: "KettyPro excels in hospitality and healthcare environments.",
+      desc: "Advanced compact delivery bot",
+      details: "KettyPro is great for compact spaces. It can play versatile roles from delivery to escorting to guiding in large business place"
     },
     {
       name: "Hola",
       img: "/images/Hola_square.webp",
       hero: "/images/Hola_hero.webp",
       category: "Pro",
-      desc: "High carrying capacity bot with voice control and pager integration",
-      details: "Hola improves engagement while performing deliveries.",
+      desc: "High capacity versatile bot",
+      details: "Carries upto 60 Kgs with voice and pager integration",
     },
     {
       name: "Flash",
@@ -64,8 +64,8 @@ export default function DeliWaveLanding() {
       img: "/images/KettyBot_square.webp",
       hero: "/images/KettyBot_hero.webp",
       category: "Standard",
-      desc: "Compact yet powerful assistant bot.",
-      details: "KettyBot excels in hospitality and healthcare environments.",
+      desc: "Great bot for tight spaces",
+      details: "KettyBot excels in fast deliveries in compact spaces and thrills customers with it cute design.",
     },
   ];
 
