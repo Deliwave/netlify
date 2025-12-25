@@ -28,14 +28,6 @@ export default function DeliWaveLanding() {
       details: "BellaPro includes advanced obstacle detection and fleet management.",
     },
     {
-      name: "KettyBot",
-      img: "/images/KettyBot_square.webp",
-      hero: "/images/KettyBot_hero.webp",
-      category: "Standard",
-      desc: "Compact yet powerful assistant bot.",
-      details: "KettyBot excels in hospitality and healthcare environments.",
-    },
-    {
       name: "Pudu2",
       img: "/images/Pudu2_square.webp",
       hero: "/images/Pudu2_hero.webp",
@@ -66,6 +58,14 @@ export default function DeliWaveLanding() {
       category: "Pro",
       desc: "Building Delivery Expert",
       details: "Flash is built for speed and efficiency in warehouses and campuses.",
+    },
+    {
+      name: "KettyBot",
+      img: "/images/KettyBot_square.webp",
+      hero: "/images/KettyBot_hero.webp",
+      category: "Standard",
+      desc: "Compact yet powerful assistant bot.",
+      details: "KettyBot excels in hospitality and healthcare environments.",
     },
   ];
 
