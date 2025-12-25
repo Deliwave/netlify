@@ -7,6 +7,7 @@ export default function DeliWaveLanding() {
   const [selectedBot, setSelectedBot] = useState(null);
   const [filter, setFilter] = useState("All");
   const [isDemoFormOpen, setIsDemoFormOpen] = useState(false);
+  const [isLearnMoreOpen, setIsLearnMoreOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [isModelsOpen, setIsModelsOpen] = useState(false);
 
@@ -233,7 +234,10 @@ export default function DeliWaveLanding() {
             >
               Request Demo
             </button>
-            <button className="border border-white/30 px-8 py-4 rounded-xl hover:bg-white/10 transition">
+            <button
+              onClick={() => setIsLearnMoreOpen(true)}
+              className="border border-white/30 px-8 py-4 rounded-xl hover:bg-white/10 transition"
+            >
               Learn More
             </button>
           </div>
@@ -436,6 +440,133 @@ export default function DeliWaveLanding() {
               <button className="w-full bg-yellow-400 text-black px-8 py-4 text-lg font-bold rounded-xl hover:bg-yellow-300 transition" type="submit">Submit Request</button>
             </div>
           </form>
+        </div>
+      </div>
+    )}
+
+    {/* Learn More Modal */}
+    {isLearnMoreOpen && (
+      <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur flex items-center justify-center p-6">
+        <div className="bg-slate-900 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-12 relative shadow-2xl">
+          <button
+            onClick={() => setIsLearnMoreOpen(false)}
+            className="sticky top-6 float-right text-white hover:text-yellow-400 text-3xl mb-4"
+            aria-label="Close learn more"
+          >
+            ✕
+          </button>
+
+          <div className="prose prose-invert max-w-none">
+            <h1 className="text-5xl font-bold mb-8 text-white">Learn More About Deliwave</h1>
+            
+            <p className="text-lg text-slate-300 leading-relaxed mb-8">
+              At Deliwave, we build intelligent robotic solutions that transform how businesses move goods and maintain clean, safe environments. Our delivery and cleaning robots are designed to integrate seamlessly into real-world operations, helping organizations increase efficiency, reduce labor strain, and elevate customer experience.
+            </p>
+
+            <h2 className="text-3xl font-bold mt-10 mb-4 text-white">Smart Delivery Robots for Every Industry</h2>
+            <p className="text-slate-300 mb-4">
+              Deliwave delivery robots are highly versatile and adaptable across multiple industries, including:
+            </p>
+            <ul className="list-disc list-inside text-slate-300 space-y-2 ml-2 mb-6">
+              <li>Restaurants and food courts</li>
+              <li>Large office campuses</li>
+              <li>Hospitals and healthcare facilities</li>
+              <li>Shopping malls and retail complexes</li>
+              <li>Hotels and multi-storied buildings</li>
+            </ul>
+            <p className="text-slate-300 mb-6">
+              Using advanced IoT integration, our robots communicate effortlessly with electronic gates, access controls, and elevators, allowing them to move independently across floors and restricted areas without human assistance.
+            </p>
+
+            <h2 className="text-3xl font-bold mt-10 mb-4 text-white">Designed for Multiple Use Cases</h2>
+            <p className="text-slate-300 mb-4">
+              Our robots are built to support a wide range of operational workflows:
+            </p>
+            <ul className="list-disc list-inside text-slate-300 space-y-2 ml-2 mb-6">
+              <li><strong>Restaurant service:</strong> Deliver food directly to customer tables and autonomously return to the kitchen</li>
+              <li><strong>Corporate offices:</strong> Transport stationery, documents, and packages from a central dispatch point to specific departments or floors</li>
+              <li><strong>Healthcare & campuses:</strong> Securely deliver supplies, files, or meals to designated locations</li>
+              <li><strong>Automotive service centers:</strong> Send parts and tools from inventory to the exact workspace for a repair order</li>
+            </ul>
+            <p className="text-slate-300 mb-6">
+              The possibilities extend far beyond these examples—our robots adapt to your workflow, not the other way around.
+            </p>
+
+            <h2 className="text-3xl font-bold mt-10 mb-4 text-white">AI-Powered Cleaning Robots That Think for Themselves</h2>
+            <p className="text-slate-300 mb-4">
+              Keep your premises spotless with Deliwave's commercial AI cleaning robots, designed for continuous, high-quality cleaning without supervision.
+            </p>
+            <p className="text-slate-300 mb-4">Our cleaning bots support:</p>
+            <ul className="list-disc list-inside text-slate-300 space-y-2 ml-2 mb-6">
+              <li>Vacuuming</li>
+              <li>Wet mopping</li>
+              <li>Floor scrubbing</li>
+            </ul>
+            <p className="text-slate-300 mb-4">
+              Unlike traditional automated cleaners, Deliwave robots verify cleaning quality. They recheck cleaned areas and automatically redo sections if standards are not met—ensuring consistent cleanliness instead of blindly covering floor space.
+            </p>
+            <p className="text-slate-300 mb-6">
+              With near zero maintenance, our robots feature:
+            </p>
+            <ul className="list-disc list-inside text-slate-300 space-y-2 ml-2 mb-6">
+              <li>Self-charging</li>
+              <li>Automatic trash and dirty water disposal</li>
+              <li>Auto water refilling</li>
+            </ul>
+            <p className="text-slate-300 mb-6">
+              You get a cleaner, safer environment—without additional operational burden.
+            </p>
+
+            <h2 className="text-3xl font-bold mt-10 mb-4 text-white">Built on Cutting-Edge Safety and Navigation Technology</h2>
+            <p className="text-slate-300 mb-4">
+              Every Deliwave robot is equipped with Dual SLAM and LiDAR technology, enabling:
+            </p>
+            <ul className="list-disc list-inside text-slate-300 space-y-2 ml-2 mb-6">
+              <li>Precise navigation in dynamic environments</li>
+              <li>Real-time obstacle detection</li>
+              <li>Smooth, collision-free movement</li>
+              <li>Safe operation around people and equipment</li>
+            </ul>
+            <p className="text-slate-300 mb-6">
+              This advanced technology ensures reliable performance in busy, real-world spaces.
+            </p>
+
+            <h2 className="text-3xl font-bold mt-10 mb-4 text-white">Flexible Plans to Get Started Quickly</h2>
+            <p className="text-slate-300 mb-4">
+              We make adopting robotics easy and accessible with multiple commercial plans:
+            </p>
+            <ul className="list-disc list-inside text-slate-300 space-y-2 ml-2 mb-6">
+              <li><strong>Buy Now, Pay Later</strong> – Deploy immediately without upfront capital strain</li>
+              <li><strong>Lease</strong> – Predictable monthly costs with full support</li>
+              <li><strong>Lease to Buy</strong> – Start leasing and transition to ownership over time</li>
+            </ul>
+            <p className="text-slate-300 mb-6">
+              Our plans are designed to fit businesses of all sizes and growth stages.
+            </p>
+
+            <h2 className="text-3xl font-bold mt-10 mb-4 text-white">The Future of Smart Operations Starts Here</h2>
+            <p className="text-slate-300 mb-8">
+              With Deliwave, you're not just adopting robots—you're upgrading the way your business operates. From intelligent delivery to autonomous cleaning, our solutions help you work smarter, safer, and more efficiently.
+            </p>
+            <p className="text-lg text-yellow-300 font-semibold mb-8">
+              Ready to learn more or see Deliwave in action? Contact us today and take the next step toward automated excellence.
+            </p>
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-4 pt-8 border-t border-white/10">
+            <button
+              onClick={() => { setIsLearnMoreOpen(false); setIsDemoFormOpen(true); }}
+              className="bg-yellow-400 text-black px-8 py-4 rounded-xl font-semibold hover:bg-yellow-300 transition"
+            >
+              Request Demo
+            </button>
+            <button
+              onClick={() => setIsLearnMoreOpen(false)}
+              className="border border-white/30 px-8 py-4 rounded-xl hover:bg-white/10 transition text-white"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     )}
